@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\let\vec\mathbf
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\begin{document}
+\title{\textbf{ASSIGNMENT 1}}
+\date{}
+\maketitle
+\textbf{Question :} Find a vector of magnitude 5 units, and parallel to the resultant of the vectors $\vec{a} = 2\hat{i}+3\hat{j}-\hat{k}$ and $\vec{b} = \hat{i}-2\hat{j}+\hat{k}$.
+
+\textbf{Solution :}
+\begin{align}
+    \Vec{a}&=\begin{pmatrix}
+        2\\3\\-1
+    \end{pmatrix},\Vec{b}=\begin{pmatrix}
+        1\\-2\\1
+    \end{pmatrix}\\
+    a+b=c&=\begin{pmatrix}
+        3\\1\\0
+    \end{pmatrix}\\
+    \norm{a+b}=\norm{c}&=\sqrt{10}\\
+    \hat{c}&=\frac{c}{\norm{c}} \\
+    \implies\hat{c}&=\frac{1}{\sqrt{10}}\begin{pmatrix}
+        3\\1\\0
+    \end{pmatrix}
+\end{align}
+So,the unit vector is
+\begin{align}
+    \pm5\hat{c}&=\pm\frac{\sqrt{10}}{2}\begin{pmatrix}
+        3\\1\\0
+    \end{pmatrix}
+\end{align}
+   
+\end{document}
+
+
+
