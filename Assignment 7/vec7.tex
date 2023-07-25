@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{gensymb}
+\usepackage{amsmath}
+\let\vec\mathbf
+\usepackage{float}
+\usepackage{graphics}
+\usepackage{graphicx}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\ensuremath{\lvert|#1\rvert|}}
+\graphicspath{{storage/self/primary/Download/asgnt7/table}}
+\graphicspath{{storage/self/primary/Download/asgnt7/fig}}
+\begin{document}
+\title{\textbf{10.10.2.4}}
+\date{}
+\maketitle
+\textbf{Question :} Prove that the tangents drawn at the ends of a diameter of a circle are parallel.
+
+\textbf{Solution :}
+\begin{table}[H]
+    \centering
+    \input{table/tab1.tex}
+    \caption{Table of input parameters}
+    \label{tab:11.11.1.13.1}
+\end{table}
+\begin{table}[H]
+    \centering
+    \input{table/tab2.tex}
+    \caption{Table of output parameters}
+    \label{tab:11.11.1.13.2}
+\end{table}
+To find the angle $\theta_2$,
+\begin{align}
+    \vec{OA} &=\vec{OB}\\
+    \theta_2- \theta_1&= 180\degree\\
+    \theta_2 &= 307\degree
+    \end{align}
+Angle between these two tangents is
+\begin{align}
+    \cos{\theta}&=\frac{\vec{m_1}^{\top}\vec{m_2}}{\vec{\norm{m_1}\norm{m_2}}}\\
+    or,\theta &= \pi
+\end{align}
+Therefore,the two tangents are parallel to each other.
+\begin{figure}[H]                          
+\centering                    
+\includegraphics[width=\columnwidth]{fig/10.10.2.4.png}                      
+\caption{}              
+\label{10.10.2.4}
+\end{figure}
+\end{document}
+
