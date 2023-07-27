@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{gensymb}
+\usepackage{amsmath}
+\usepackage{float}
+\let\vec\mathbf
+\usepackage{float}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\ensuremath{\lvert|#1\rvert|}}
+\usepackage{graphics}
+\usepackage{graphicx}
+\graphicspath{{storage/self/primary/Download/asgnt8/fig}}
+\graphicspath{{storage/self/primary/Download/asgnt8/table}}
+\usepackage{amsmath}
+\usepackage{float}
+\let\vec\mathbf
+\usepackage{float}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\ensuremath{\lvert|#1\rvert|}}
+\begin{document}
+\title{\textbf{11.11.1.13}}
+\date{}
+\maketitle
+\textbf{Question :} Find the equation of the circle with radius 5 whose centre lies on $x$-axis and passes through the point $\brak{2,3}$.
+
+\textbf{Solution :}
+\begin{table}[H]
+    \centering
+    \input{table/tab1.tex}
+        \caption{Table of input parameters}
+    \label{tab:11.11.1.13}
+\end{table}
+The general formula of the circle is
+\begin{align}
+\norm{\vec{x}}^2 + 2\vec{u}^{\top}\vec{x}+f&=0\\
+ where,   \vec{u}=-x\vec{e_1}\\
+ OA&=r\\
+ \sqrt{\brak{2-x}^2+9}&=5\\
+ x&=6\\
+ or,x&=-2
+ \end{align}
+ For $x=6$
+ \begin{align}
+ \norm{\vec{A}}^2 + 2\vec{u}^{\top}\vec{A}+f&=0\\
+ or,f&=11
+\end{align}
+ For $x=-2$
+ \begin{align}
+ \norm{\vec{A}}^2 + 2\vec{u}^{\top}\vec{A}+f&=0\\
+ or,f&=-21
+\end{align}
+Therefore the equations of the circle are
+\begin{align}
+   \norm{\vec{x}}^2 - 2\myvec{6&0}\vec{x}+11&=0\\
+   \norm{\vec{x}}^2 - 2\myvec{-2&0}\vec{x}-21&=0
+\end{align}    
+\begin{figure}[H]
+    \centering
+\includegraphics[width=\columnwidth]{fig/11.11.1.13.png}
+    \caption{}
+    \label{fig:11.11.1.13}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{fig/11.11.1.13.1.png}
+\caption{}
+\label{fig:11.11.1.13.1}
+\end{figure}
+\end{document}
+
+
